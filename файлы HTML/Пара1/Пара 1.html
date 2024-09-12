@@ -1,0 +1,153 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пара1</title>
+    <style>
+        body {background-color:darkgrey;}
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>
+        <a href="http://kubsu.ru">1. kubsu.ru</a>
+    </li>
+    <li>
+        <a href="https://kubsu.ru">2. https://kubsu.ru</a>
+    </li>
+    <li id="photo">
+        <p style="font-size: 20 px;">3. If you want more flowers - take picture </p>
+        <a href="https://ru.freepik.com/photos/цветы">
+            <img src="file:C:/файлы HTML/Пара1/image.jpg" alt = цветочек style ="width: 400px ;">
+        </a>
+    </li>
+    <li>
+        <a href="#">4. This page</a>
+    </li>
+    <li>
+        <a href="file:C://файлы HTML/Пара1/Untitled-2.html">5. Main page</a>
+    </li>
+    <li>
+        <a href="#photo">6. Go to photo</a>
+    </li>
+    <li>
+        <a href="http://example.com/request?param1=value1&param2=value2">7. 3 params link </a>
+    </li>
+    <li>
+        <a href="http://localhost?id=1">8. Id link</a>
+    </li>
+    <li>
+        <a href="second_index.html">9. Second index page</a>
+    </li>
+    <li>
+        <a href="./about/about.html">10. About</a>
+    </li>
+    <li>
+        <a href="../">11. Up </a>
+    </li>
+    <li>
+        <a href=".././">12. Up and more Up </a>
+    </li>
+    <li>
+        <h4>13. Here is a <a href="#">link</a> in text</h4>
+    </li>
+    <li>
+        <a href="https://example.com#example">14. foreign site</a>
+    </li>
+    <li>
+        <img src="file:C://файлы HTML/Пара1/cat.jpg" style="width: 200px;" usemap="#catmap" alt="Cat">
+        <map name="catmap">
+            <area shape="rect" coords="100,100,250,350" href="https://ru.wikipedia.org/wiki/Кошка" alt="More about cats">
+        </map>
+    </li>
+    <li>
+        <a href="">16. Nothing to go =</a>
+    </li>
+    <li>
+        <a>17. Link without href</a>
+    </li>
+    <li>
+        <a href="#" rel="nofollow">18. Nofollow link</a>
+    </li>
+    <li>
+        <a href="#" rel="noindex">19. Noindex link</a>
+    </li>
+    <li>
+        <ol>
+            <li>
+                <a href="#" title="Link 1">Order Link 1</a>
+            </li>
+            <li>
+                <a href="#" title="Link 2">Order Link 2</a>
+            </li>
+            <li>
+                <a href="#" title="Link 3">Order Link 3</a>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <a href="ftp://user:password@https/dir/file">21. FTP link</a>
+    </li>
+</ul>
+<br>
+<br>
+<h5 style="font-size: 20px;">FORM</h5>
+<form>
+    <label for="FIO">ФИО</label><br>
+    <input id="FIO" type="text" placeholder="Введите своё ФИО"><br>
+
+    <label for="tel">Телефон</label><br>
+    <input id="tel" type="tel" placeholder="+7 (999) 999-99-99"><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" type="email" placeholder="example@example.example"><br>
+
+    <label for="birth_data">Дата рождения</label><br>
+    <input id="birth_data" type="date"><br>
+
+    <h4>Выберите пол</h4>
+    <dl>
+        <dt>
+            <input id="woman" type="radio" name="sex" value="female">
+            <label for="woman">Женский</label>
+        </dt>
+        <dd>Выберите женский пол.</dd>
+
+        <dt>
+            <input id="man" type="radio" name="sex" value="male">
+            <label for="man">Мужской</label>
+        </dt>
+        <dd>Выберите мужской пол.</dd>
+    </dl>
+
+
+    <label for="languages">Выберите любимый язык программирования:</label>
+    <select id="languages" name="languages">
+        <option value="pascal">Pascal</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="haskell">Haskell</option>
+        <option value="clojure">Clojure</option>
+        <option value="prolog">Prolog</option>
+        <option value="scala">Scala</option>
+    </select><br>
+
+    <label for="user_info">Биография</label><br>
+    <textarea id="user_info" rows="5" style="resize:both;"></textarea><br>
+
+    <input id="get_credit" type="checkbox">
+    <label for="get_credit"> с контрактом ознакомлен(а)</label><br>
+
+    <button type="submit">Сохранить</button>
+</form>
+
+
+</body>
+</html>
+
