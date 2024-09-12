@@ -1,14 +1,11 @@
 
 <!doctype html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Пара1</title>
-    <style>
-        body {background-color:darkgrey;}
-    </style>
+    <title>1</title>
+    <meta name="robots" content="noindex, nofollow">
 </head>
-<body>
+<body style="background-color:honeydew;">
 
 <ul>
     <li>
@@ -18,22 +15,19 @@
         <a href="https://kubsu.ru">2. https://kubsu.ru</a>
     </li>
     <li id="photo">
-        <p style="font-size: 20 px;">3. If you want more flowers - take picture </p>
-        <a href="https://ru.freepik.com/photos/цветы">
-            <img src="file:C:/файлы HTML/Пара1/image.jpg" alt = цветочек style ="width: 400px ;">
-        </a>
+        <a><img src="image.jpg" alt="Flower" style="width: 200px;"></a>
     </li>
     <li>
         <a href="#">4. This page</a>
     </li>
     <li>
-        <a href="file:C://файлы HTML/Пара1/Untitled-2.html">5. Main page</a>
+        <a href="/">5. Main page</a>
     </li>
     <li>
         <a href="#photo">6. Go to photo</a>
     </li>
     <li>
-        <a href="http://example.com/request?param1=value1&param2=value2">7. 3 params link </a>
+        <a href="/uni=true?vlad=false?dima=joke">7. 3 params link</a>
     </li>
     <li>
         <a href="http://localhost?id=1">8. Id link</a>
@@ -48,18 +42,18 @@
         <a href="../">11. Up </a>
     </li>
     <li>
-        <a href=".././">12. Up and more Up </a>
+        <a href=".././">12.Up and Up </a>
     </li>
     <li>
-        <h4>13. Here is a <a href="#">link</a> in text</h4>
+        <h1 style="font-size: medium;">13. Here is a <a href="#">link</a> in text</h1>
     </li>
     <li>
-        <a href="https://example.com#example">14. foreign site</a>
+        <a href="https://example.com#example">14. Link on other site</a>
     </li>
     <li>
-        <img src="file:C://файлы HTML/Пара1/cat.jpg" style="width: 200px;" usemap="#catmap" alt="Cat">
+        <img src="nice_cat.jpg" style="width: 200px;"usemap="#catmap" alt="Cat">
         <map name="catmap">
-            <area shape="rect" coords="100,100,250,350" href="https://ru.wikipedia.org/wiki/Кошка" alt="More about cats">
+            <area shape="rect" coords="34,44,270,350" href="https://ru.wikipedia.org/wiki/Кошка" alt="More about cats">
         </map>
     </li>
     <li>
@@ -73,8 +67,9 @@
     </li>
     <li>
         <a href="#" rel="noindex">19. Noindex link</a>
-    </li>
+    </li> 
     <li>
+        20.
         <ol>
             <li>
                 <a href="#" title="Link 1">Order Link 1</a>
@@ -88,12 +83,12 @@
         </ol>
     </li>
     <li>
-        <a href="ftp://user:password@https/dir/file">21. FTP link</a>
+        <a href="ftp://user:pass@https/dir/file">21. FTP link</a>
     </li>
 </ul>
 <br>
 <br>
-<h5 style="font-size: 20px;">FORM</h5>
+<h2>FORM</h2>
 <form>
     <label for="FIO">ФИО</label><br>
     <input id="FIO" type="text" placeholder="Введите своё ФИО"><br>
@@ -123,7 +118,7 @@
     </dl>
 
 
-    <label for="languages">Выберите любимый язык программирования:</label>
+    <label for="languages">Выберите язык программирования:</label>
     <select id="languages" name="languages">
         <option value="pascal">Pascal</option>
         <option value="c">C</option>
@@ -139,10 +134,10 @@
     </select><br>
 
     <label for="user_info">Биография</label><br>
-    <textarea id="user_info" rows="5" style="resize:both;"></textarea><br>
+    <textarea id="user_info" rows="5" style="resize: both;"></textarea><br>
 
     <input id="get_credit" type="checkbox">
-    <label for="get_credit"> с контрактом ознакомлен(а)</label><br>
+    <label for="get_credit">с контрактом ознакомлен(а)</label><br>
 
     <button type="submit">Сохранить</button>
 </form>
