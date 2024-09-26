@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #DAD7D7;
+  text-decoration: none;
+}
+
+a {
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+/*  шапка */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1% 0;
+}
+
+.header-content {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+/* лого */
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 100px;
+  margin-left: 5%;
+  border-radius: 50%;
+  background: url(logo.png);
+  background-size: auto 100px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 10px;
+  float: left;
+  margin: 0;
+  position: absolute;
+}
+
+/* git */
+.site-link {
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.site-link a {
+  display: inline-flex;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 10%;
+  font-size: 200%;
+}
+
+.site-link a:hover {
+  color: darkgrey;
+}
+
+/* ссылки */
+.main-menu ul {
+  position: relative;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.main-menu li {
+  margin-left: 0%;
+}
+
+.main-menu a {
+  font-size: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  color: darkgrey;
+}
+
+/* таблица */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 3px #333;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  text-align: left;
+  border: solid 1px #333;
+}
+
+.data-table th {
+  background-color: #333;
+  color: #fff;
+  grid-column: auto;
+  border: solid 1px #DAD7D7;
+  text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* подвал */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DAD7D7;
+    text-decoration: none;
+  }
+
+  a {
+    color: #333;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /*  шапка */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  /* лого */
+  .logo {
+    display: flex;
+    width: 140px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(logo.png);
+    background-size: auto 120px;
+  }
+
+  .logo img {
+    height: 40px;
+    float: left;
+    margin: 0;
+    position: absolute;
+  }
+
+  /* git */
+  .site-link {
+    width: 20%;
+  }
+
+  .site-link a {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    align-items: center;
+    width: 25%;
+  }
+
+  .site-link a:hover {
+    color: darkgrey;
+  }
+
+  /* ссылки */
+  .main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-menu li {
+    margin-left: 20px;
+  }
+
+  .main-menu a {
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .main-menu a:hover {
+    color: darkgrey;
+  }
+
+  /* таблица */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 3px #333;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #333;
+  }
+
+  .data-table th {
+    background-color: #333;
+    color: #fff;
+    grid-column: auto;
+    border: solid 1px #DAD7D7;
+    text-align: left;
+  }
+
+  .data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* подвал */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
