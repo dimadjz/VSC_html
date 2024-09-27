@@ -100,7 +100,7 @@ main {
 }
 
 .data-table {
-  width:auto;
+  width:95%;
   border-collapse:collapse;
   border: solid 3px #333;
 }
