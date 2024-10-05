@@ -14,16 +14,10 @@ main {
   flex-direction: column-reverse;
 }
 
-.content {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 1%;
-}
-
-/*  шапка */
+/*  шапка1 */
 .header {
   background-color: #333;
-  color: #fff;
+  color: #FFFFFF;
   padding: 1% 0;
 }
 
@@ -36,7 +30,7 @@ main {
   flex-wrap: wrap;
 }
 
-/* лого */
+/* лого1 */
 .logo {
   display: inline-block;
   width: 120px;
@@ -56,7 +50,7 @@ main {
   position: absolute;
 }
 
-/* git */
+/* git1 */
 .site-link {
   width: 60%;
   text-align: center;
@@ -69,7 +63,6 @@ main {
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
-  padding-left: 10%;
   margin-top: 10%;
   font-size: 200%;
 }
@@ -78,7 +71,7 @@ main {
   color: darkgrey;
 }
 
-/* ссылки */
+/* ссылки1 */
 .main-menu ul {
   position: relative;
   list-style-type: none;
@@ -86,12 +79,19 @@ main {
 }
 
 .main-menu li {
+  border-radius: 20%;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 110%;
+  height:max-content;
+  background-color: #FFFFFF;
   margin-left: 0%;
 }
 
 .main-menu a {
+  margin-left: 5px;
   font-size: 20px;
-  color: whitesmoke;
+  color:#333;
   text-decoration: none;
 }
 
@@ -99,17 +99,21 @@ main {
   color: darkgrey;
 }
 
-/* таблица */
-.data-table {
+/* таблица1 */
+.content {
   width: 100%;
-  border-collapse: collapse;
+}
+
+.data-table {
+  width:100%;
+  border-collapse:collapse;
   border: solid 3px #333;
 }
 
 .data-table th,
 .data-table td {
-  padding: 10px;
-  text-align: left;
+  padding: 2px;
+  text-align:center;
   border: solid 1px #333;
 }
 
@@ -125,8 +129,9 @@ main {
   background-color: #f2f2f2;
 }
 
-/* подвал */
+/* подвал1 */
 .footer {
+  width: 100%;
   background-color: #333;
   color: #fff;
   padding: 20px 0;
@@ -138,9 +143,10 @@ main {
   margin: 0 auto;
 }
 
-/* Tablet and Desktop Styles */
+/* ПК */
 @media (min-width: 768px) {
   body {
+    width: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #DAD7D7;
@@ -152,17 +158,19 @@ main {
   }
 
   main {
+    width: 100%;
     flex-direction: column;
   }
 
   .content {
-    max-width: 960px;
+    width: 95%;
     margin: 0 auto;
     padding: 20px;
   }
 
-  /*  шапка */
+  /*  шапка2 */
   .header {
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -176,7 +184,7 @@ main {
     flex-direction: row;
   }
 
-  /* лого */
+  /* лого2 */
   .logo {
     display: flex;
     width: 140px;
@@ -193,7 +201,7 @@ main {
     position: absolute;
   }
 
-  /* git */
+  /* git2 */
   .site-link {
     width: 20%;
   }
@@ -210,7 +218,7 @@ main {
     color: darkgrey;
   }
 
-  /* ссылки */
+  /* ссылки2 */
   .main-menu ul {
     list-style-type: none;
     margin: 0;
@@ -233,7 +241,7 @@ main {
     color: darkgrey;
   }
 
-  /* таблица */
+  /* таблица2 */
   .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -259,8 +267,9 @@ main {
     background-color: #f2f2f2;
   }
 
-  /* подвал */
+  /* подвал2 */
   .footer {
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
