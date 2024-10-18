@@ -6,6 +6,12 @@
   <title>Using bootstrap</title>
   <link rel="stylesheet" href="static/style/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
     integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,6 +46,38 @@
       </div>
     </nav>
   </header>
+
+  <h1 style="color:#333">Калькулятор стоимости заказа</h1>
+
+  <label for="product">Выберите ОС:</label>
+  <select id="product">
+    <option value="500">Windows Vista</option>
+    <option value="800">Windows 7</option>
+    <option value="1000">Windows 8</option>
+    <option value="1200">Windows 10</option>
+    <option value="1500">Windows 11</option>
+  </select>
+
+  <br><br>
+
+  <label for="quantity">Количество:</label>
+  <input type="number" id="quantity" min="1" value="1">
+
+  <br><br>
+
+  <button id="calculate">Подсчитать стоимость</button>
+
+  <div class="result1" id="result1"></div>
+
+  <script>
+    document.getElementById('calculate').addEventListener('click', function () {
+      const productPrice = parseFloat(document.getElementById('product').value);
+      const quantity = parseInt(document.getElementById('quantity').value);
+      const totalCost = productPrice * quantity;
+
+      document.getElementById('result1').innerText = `Стоимость заказа: ${totalCost} руб.`;
+    });
+  </script>
 
   <div class="new_content max_size">
     <table class="table table-striped table-dark table-bordered">
@@ -355,9 +393,5 @@
     </div>
   </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
 </html>
