@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 33.33%; 
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.arrow.left {
+    left: 10px;
+}
+.arrow.right {
+    right: 10px;
+}
+.pager {
+    text-align: center;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .slide {
+        min-width: 100%; 
+    }
+}
